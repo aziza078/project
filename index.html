@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-
-
-
   <script>
-    let priorities = [{ "idPriority": 1, "priority": "Very high" },{ "idPriority": 2, "priority": "High" },
-    { "idPriority": 3, "priority": "Medium" },{ "idPriority": 4, "priority": "Low" },
-    { "idPriority": 5, "priority": "Very low" }];
+    let priorities = [
+      { "idPriority": 1, "priority": "Very high" },
+      { "idPriority": 2, "priority": "High" },
+      { "idPriority": 3, "priority": "Medium" },
+      { "idPriority": 4, "priority": "Low" },
+      { "idPriority": 5, "priority": "Very low" }
+    ];
     console.log(priorities);
 
-    let status = [{ "idStatus": 1, "status": "In progress" },{ "idStatus": 2, "status": "Done" },
-    { "idStatus": 3, "status": "Not started" },{ "idStatus": 4, "status": "Canceled" }];
+    let status = [
+      { "idStatus": 1, "status": "In progress" },
+      { "idStatus": 2, "status": "Done" },
+      { "idStatus": 3, "status": "Not started" },
+      { "idStatus": 4, "status": "Canceled" }
+    ];
     console.log(status);
 
     let taskTitles = [
@@ -46,11 +51,76 @@
     console.log(categories);
 
     let tasks = [
-      {"idTask": 1,"idTitle": 1,"idPriority": 3,"idStatus": 1,"idNotes": 1,"idCategory": 3,"date": "10.11.25"},
-      {"idTask": 2,"idTitle": 2,"idPriority": 5,"idStatus": 3,"idNotes": 2,"idCategory": 2,"date": "11.11.25"},
-      {"idTask": 3,"idTitle": 3,"idPriority": 2,"idStatus": 2,"idNotes": 3,"idCategory": 2,"date": "12.11.25"},
-      {"idTask": 4,"idTitle": 4,"idPriority": 4,"idStatus": 4,"idNotes": 4,"idCategory": 5,"date": "13.11.25"},
-      {"idTask": 5,"idTitle": 5,"idPriority": 1,"idStatus": 1,"idNotes": 5,"idCategory": 1,"date": "14.11.25"}];
+      {
+        "idTask": 1,
+        "date": "2025-11-10",
+        "dueto": "2025-12-01",
+        "duration": 2,
+        "location": "University",
+        "idTitle": 1,
+        "idPriority": 3,
+        "idStatus": 1,
+        "idNotes": 1,
+        "idCategory": 3,
+        "isCompleted": false,
+        "assignedTo": "Aziza"
+      },
+      {
+        "idTask": 2,
+        "date": "2025-11-11",
+        "dueto": "2025-12-05",
+        "duration": 1,
+        "location": "Store",
+        "idTitle": 2,
+        "idPriority": 5,
+        "idStatus": 3,
+        "idNotes": 2,
+        "idCategory": 2,
+        "isCompleted": false,
+        "assignedTo": "Aziza"
+      },
+      {
+        "idTask": 3,
+        "date": "2025-11-12",
+        "dueto": "2025-12-02",
+        "duration": 3,
+        "location": "Office",
+        "idTitle": 3,
+        "idPriority": 2,
+        "idStatus": 2,
+        "idNotes": 3,
+        "idCategory": 2,
+        "isCompleted": true,
+        "assignedTo": "Aziza"
+      },
+      {
+        "idTask": 4,
+        "date": "2025-11-13",
+        "dueto": "2025-12-10",
+        "duration": 4,
+        "location": "Library",
+        "idTitle": 4,
+        "idPriority": 4,
+        "idStatus": 4,
+        "idNotes": 4,
+        "idCategory": 5,
+        "assignedTo": "Aziza"
+      },
+      {
+        "idTask": 5,
+        "date": "2025-11-14",
+        "dueto": "2025-12-03",
+        "duration": 2,
+        "location": "University",
+        "idTitle": 5,
+        "idPriority": 1,
+        "idStatus": 1,
+        "idNotes": 5,
+        "idCategory": 1,
+        "assignedTo": "Aziza"
+      }
+    ];
+
     console.log(tasks);
   </script>
 </head>
@@ -59,3 +129,4 @@
 </body>
 
 </html>
+
