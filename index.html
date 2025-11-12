@@ -22,24 +22,26 @@
       { "idStatus": 4, "status": "Canceled" }
     ];
     console.log(status);
-
-    let taskTitles = [
-      { "idTitle": 1, "taskTitle": "Study" },
-      { "idTitle": 2, "taskTitle": "Shopping" },
-      { "idTitle": 3, "taskTitle": "Clean the room" },
-      { "idTitle": 4, "taskTitle": "Reading" },
-      { "idTitle": 5, "taskTitle": "Go to University" }
+ 
+    let difficulty = [
+    { "idDifficulty": 1, "difficultyLevel": "Very Easy" },
+    { "idDifficulty": 2, "difficultyLevel": "Easy" },
+    { "idDifficulty": 3, "difficultyLevel": "Moderate" },
+    { "idDifficulty": 4, "difficultyLevel": "Hard" },
+    { "idDifficulty": 5, "difficultyLevel": "Very Hard" }
     ];
-    console.log(taskTitles);
 
-    let notes = [
-      { "idNotes": 1, "notes": "Review lecture slides and practice coding exercises." },
-      { "idNotes": 2, "notes": "Buy vegetables, eggs, and milk for the week." },
-      { "idNotes": 3, "notes": "Organize desk, change bed sheets, and vacuum the floor." },
-      { "idNotes": 4, "notes": "Read at least 20 pages of the new book before bed." },
-      { "idNotes": 5, "notes": "Attend morning lecture and submit the assignment on time." }
+    console.log(difficulty);
+
+    let tags = [
+    { "idTag": 1, "tagName": "Urgent" },
+    { "idTag": 2, "tagName": "Important" },
+    { "idTag": 3, "tagName": "Optional" },
+    { "idTag": 4, "tagName": "Routine" },
+    { "idTag": 5, "tagName": "Follow-up" }
     ];
-    console.log(notes);
+    console.log(tags);
+
 
     let categories = [
       { "idCategory": 1, "categoryName": "Work" },
@@ -51,74 +53,81 @@
     console.log(categories);
 
     let tasks = [
-      {
-        "idTask": 1,
-        "date": "2025-11-10",
-        "dueto": "2025-12-01",
-        "duration": 2,
-        "location": "University",
-        "idTitle": 1,
-        "idPriority": 3,
-        "idStatus": 1,
-        "idNotes": 1,
-        "idCategory": 3,
-        "isCompleted": false,
-        "assignedTo": "Aziza"
-      },
-      {
-        "idTask": 2,
-        "date": "2025-11-11",
-        "dueto": "2025-12-05",
-        "duration": 1,
-        "location": "Store",
-        "idTitle": 2,
-        "idPriority": 5,
-        "idStatus": 3,
-        "idNotes": 2,
-        "idCategory": 2,
-        "isCompleted": false,
-        "assignedTo": "Aziza"
-      },
-      {
-        "idTask": 3,
-        "date": "2025-11-12",
-        "dueto": "2025-12-02",
-        "duration": 3,
-        "location": "Office",
-        "idTitle": 3,
-        "idPriority": 2,
-        "idStatus": 2,
-        "idNotes": 3,
-        "idCategory": 2,
-        "isCompleted": true,
-        "assignedTo": "Aziza"
-      },
-      {
-        "idTask": 4,
-        "date": "2025-11-13",
-        "dueto": "2025-12-10",
-        "duration": 4,
-        "location": "Library",
-        "idTitle": 4,
-        "idPriority": 4,
-        "idStatus": 4,
-        "idNotes": 4,
-        "idCategory": 5,
-        "assignedTo": "Aziza"
-      },
-      {
-        "idTask": 5,
-        "date": "2025-11-14",
-        "dueto": "2025-12-03",
-        "duration": 2,
-        "location": "University",
-        "idTitle": 5,
-        "idPriority": 1,
-        "idStatus": 1,
-        "idNotes": 5,
-        "idCategory": 1,
-        "assignedTo": "Aziza"
-      }
+    {
+    "idTask": 1,
+    "taskTitle": "Study JavaScript",
+    "date": "2025-11-10",
+    "dueto": "2025-12-01",
+    "duration": 2,
+    "location": "University",
+    "idPriority": 3,
+    "idStatus": 1,
+    "notes": "Review lecture slides and practice coding exercises.",
+    "idCategory": 3,
+    "idDifficulty": 3,
+    "idTag": 2,
+    "assignedTo": "Aziza"
+    },
+    {
+    "idTask": 2,
+    "taskTitle": "Grocery Shopping",
+    "date": "2025-11-11",
+    "dueto": "2025-12-05",
+    "duration": 1,
+    "location": "Store",
+    "idPriority": 5,
+    "idStatus": 3,
+    "notes": "Buy vegetables, eggs, and milk for the week.",
+    "idCategory": 2,
+    "idDifficulty": 2,
+    "idTag": 4,
+    "assignedTo": "Aziza"
+    },
+    {
+    "idTask": 3,
+    "taskTitle": "Clean the Room",
+    "date": "2025-11-12",
+    "dueto": "2025-12-02",
+    "duration": 3,
+    "location": "Apartment",
+    "idPriority": 2,
+    "idStatus": 2,
+    "notes": "Organize desk, change bed sheets, and vacuum the floor.",
+    "idCategory": 2,
+    "idDifficulty": 2,
+    "idTag": 5,
+    "assignedTo": "Aziza"
+    },
+    {
+    "idTask": 4,
+    "taskTitle": "Reading Session",
+    "date": "2025-11-13",
+    "dueto": "2025-12-10",
+    "duration": 4,
+    "location": "Library",
+    "idPriority": 4,
+    "idStatus": 4,
+    "notes": "Read at least 20 pages of the new book before bed.",
+    "idCategory": 5,
+    "idDifficulty": 3,
+    "idTag": 3,
+    "assignedTo": "Aziza"
+    },
+    {
+    "idTask": 5,
+    "taskTitle": "University Assignment",
+    "date": "2025-11-14",
+    "dueto": "2025-12-03",
+    "duration": 2,
+    "location": "University",
+    "idPriority": 1,
+    "idStatus": 1,
+    "notes": "Attend morning lecture and submit the assignment on time.",
+    "idCategory": 1,
+    "idDifficulty": 4,
+    "idTag": 1,
+    "assignedTo": "Aziza"
+    }
     ];
 
     console.log(tasks);
